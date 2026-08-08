@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TeleTV</string>
+
+    <!-- App / auth states -->
+    <string name="signed_out">Signed out.</string>
+    <string name="signing_out">Signing out…</string>
+    <string name="starting">Starting…</string>
+
+    <!-- Settings menu -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_subtitle">Manage your PIN lock and account.</string>
+    <string name="settings_pin_lock">PIN Lock</string>
+    <string name="settings_storage">Storage</string>
+    <string name="settings_proxy">Proxy</string>
+    <string name="settings_analytics">Usage data</string>
+    <string name="settings_sign_out">Sign out</string>
+    <string name="sign_out_confirm_title">Sign out?</string>
+    <string name="sign_out_confirm_warning">This clears the local media index, favorites, and PIN on this TV. You\'ll need to scan the QR code again to sign back in.</string>
+    <string name="sign_out_confirm">Sign out</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Storage -->
+    <string name="storage_title">Storage</string>
+    <string name="storage_usage">Cached media: %1$s  ·  Database: %2$s</string>
+    <string name="storage_usage_loading">Calculating usage…</string>
+    <string name="storage_cap_label">Cache limit</string>
+    <string name="storage_cap_1gb">1 GB</string>
+    <string name="storage_cap_2gb">2 GB</string>
+    <string name="storage_cap_5gb">5 GB</string>
+    <string name="storage_cap_unlimited">Unlimited</string>
+    <string name="storage_clear_now">Clear cache now</string>
+    <string name="storage_clearing">Clearing…</string>
+
+    <!-- Usage data (analytics) -->
+    <string name="analytics_title">Usage data</string>
+    <string name="analytics_explainer">Anonymous statistics help fix crashes and playback failures: which screens are opened, whether a video streamed or had to download, how long searches take. Never your media, titles, file names, search text, or Telegram account.</string>
+    <string name="analytics_state_on">Sharing is on</string>
+    <string name="analytics_state_off">Sharing is off</string>
+    <string name="analytics_turn_off">Turn off</string>
+    <string name="analytics_turn_on">Turn on</string>
+
+    <!-- Proxy -->
+    <string name="proxy_title">Proxy</string>
+    <string name="proxy_direct">Direct connection (no proxy)</string>
+    <string name="proxy_add">＋ Add proxy</string>
+    <string name="proxy_add_title">Add proxy</string>
+    <string name="proxy_type_socks5">SOCKS5</string>
+    <string name="proxy_type_mtproto">MTProto</string>
+    <string name="proxy_server">Server</string>
+    <string name="proxy_port">Port</string>
+    <string name="proxy_secret">Secret</string>
+    <string name="proxy_username">Username (optional)</string>
+    <string name="proxy_password">Password (optional)</string>
+    <string name="proxy_save">Save &amp; enable</string>
+    <string name="proxy_test">Test</string>
+    <string name="proxy_remove">Remove</string>
+
+    <!-- 2FA password -->
+    <string name="password_title">Two-Step Verification</string>
+    <string name="password_subtitle">Enter your Telegram cloud password to finish signing in</string>
+    <string name="password_hint_label">Hint: %1$s</string>
+    <string name="password_submit">Sign in</string>
+    <string name="password_start_over">Scan QR again</string>
+    <string name="password_checking">Checking…</string>
+    <string name="wrong_password">Wrong password, try again</string>
+
+    <!-- QR login -->
+    <string name="qr_tagline">Your Telegram media, on the big screen.</string>
+    <string name="qr_step_1">Open Telegram on your phone</string>
+    <string name="qr_step_2">Settings → Devices → Link Desktop Device</string>
+    <string name="qr_step_3">Point your camera at this code</string>
+    <string name="qr_code_desc">Telegram login QR code</string>
+    <string name="qr_disconnected_title">Can\'t connect</string>
+    <string name="qr_disconnected_desc">Can\'t reach Telegram to refresh the code. Check your network, or set up a Proxy.</string>
+    <string name="network_settings">Network settings</string>
+
+    <!-- Grid -->
+    <string name="btn_source">▾ Source</string>
+    <string name="btn_search">⌕ Search</string>
+    <string name="btn_filter">⛃ Filter</string>
+    <string name="btn_settings">⚙ Settings</string>
+    <string name="no_media_for_filter">No media for “%1$s”.</string>
+    <string name="end_of_filter">·  End of “%1$s”  ·</string>
+    <string name="end_of_source">·  End of Saved Messages  ·</string>
+    <string name="exit_confirm_title">Exit TeleTV?</string>
+    <string name="exit_confirm_yes">Exit</string>
+    <string name="exit_confirm_no">Cancel</string>
+
+    <!-- Filter panel -->
+    <string name="filter_title">Filter</string>
+    <string name="reading_index">Reading index…</string>
+    <string name="no_tags_for_source">No tags for this source</string>
+    <string name="all_media">All media</string>
+    <string name="category_type">Type</string>
+    <string name="category_code">Code</string>
+    <string name="category_name">Performer</string>
+    <string name="category_tags">Tags</string>
+    <string name="category_year">Year</string>
+    <string name="indexing_progress">Indexing %1$d/%2$d…</string>
+    <string name="indexing_count">Indexing %1$d…</string>
+    <string name="indexing_failed">Indexing failed</string>
+    <string name="section_index">Index</string>
+    <string name="build_tag_index">＋ Build tag index</string>
+    <string name="sync_new_items">↻ Sync new items</string>
+    <string name="rebuild_index">⟳ Rebuild index</string>
+    <string name="retry_indexing">↻ Retry indexing</string>
+
+    <!-- Search dialog -->
+    <string name="search_title">Search</string>
+    <string name="search_hint">Type to search…</string>
+
+    <!-- Source picker -->
+    <string name="choose_source">Choose a source</string>
+    <string name="loading_chats">Loading chats…</string>
+    <string name="favorites">Favorites</string>
+    <string name="recent_chats">Recent chats</string>
+    <string name="saved_messages">Saved Messages</string>
+    <string name="status_indexing">Indexing…</string>
+    <string name="status_indexed">Indexed</string>
+    <string name="status_index_failed">Index failed</string>
+    <string name="status_not_indexed">Not indexed</string>
+    <string name="protected_source">Protected</string>
+
+    <!-- PIN -->
+    <string name="enter_pin">Enter PIN</string>
+    <string name="wrong_pin_try_again">Wrong PIN, try again</string>
+    <string name="pin_lock">PIN Lock</string>
+    <string name="pin_lock_active_desc">A PIN is currently required to open the app.</string>
+    <string name="change_pin">Change PIN</string>
+    <string name="remove_pin">Remove PIN</string>
+    <string name="enter_current_pin">Enter current PIN</string>
+    <string name="enter_new_pin">Enter new PIN</string>
+    <string name="confirm_new_pin">Confirm new PIN</string>
+    <string name="pins_didnt_match">PINs didn\'t match, start over</string>
+    <string name="enter_twice_hint">You\'ll enter it twice to confirm</string>
+    <string name="pin_removed">PIN removed</string>
+    <string name="pin_set">PIN set</string>
+
+    <!-- Player -->
+    <string name="playback_failed">Playback failed: %1$s. Press DOWN to skip.</string>
+    <string name="failed_to_load_photo">Failed to load photo</string>
+    <string name="failed_to_load_video">Failed to load video</string>
+    <string name="resumed_from">Resumed from %1$s</string>
+    <string name="watched">Watched</string>
+</resources>

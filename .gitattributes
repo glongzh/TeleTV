@@ -1,0 +1,9 @@
+# Normalize line endings so a Windows checkout does not produce CRLF shell
+# scripts (which fail with "bad interpreter" on Linux/macOS and in CI).
+* text=auto eol=lf
+
+*.bat text eol=crlf
+
+*.jar binary
+*.so binary
+*.png binary

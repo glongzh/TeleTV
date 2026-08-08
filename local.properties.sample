@@ -1,0 +1,35 @@
+# Copy this file to `local.properties` and fill in real values.
+# `local.properties` is git-ignored and must NOT be committed.
+
+# Path to your Android SDK (Android Studio sets this automatically).
+# sdk.dir=C:\\Users\\<you>\\AppData\\Local\\Android\\Sdk
+
+# --- Telegram (required) -----------------------------------------------------
+# Application credentials from https://my.telegram.org (API development tools).
+# TDLib cannot initialize without them.
+TELEGRAM_API_ID=0
+TELEGRAM_API_HASH=
+
+# --- Release signing (optional) ----------------------------------------------
+# Only needed for signed release builds. Without these, `assembleRelease` still
+# works and produces an unsigned APK. Create a keystore with:
+#
+#   keytool -genkeypair -v -keystore keystore/release.jks -keyalg RSA \
+#           -keysize 2048 -validity 10000 -alias teletv
+#
+# Path is resolved relative to the project root. `keystore/` is git-ignored;
+# back up both the keystore and these passwords — upgrading an installed app
+# requires the same key.
+# KEYSTORE_FILE=keystore/release.jks
+# KEYSTORE_PASSWORD=
+# KEY_ALIAS=teletv
+# KEY_PASSWORD=
+
+# --- PostHog analytics (optional) --------------------------------------------
+# Leave the key empty to disable analytics entirely: the SDK is then never
+# initialized and every Analytics call is a no-op. This is the default for any
+# fresh clone.
+# Project API key: PostHog -> Settings -> Project -> Project API key (phc_...).
+POSTHOG_API_KEY=
+# US Cloud: https://us.i.posthog.com | EU Cloud: https://eu.i.posthog.com
+POSTHOG_HOST=https://us.i.posthog.com

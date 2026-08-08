@@ -1,0 +1,38 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      # No local.properties in CI. app/build.gradle.kts falls back to the
+      # environment and then to placeholders, so the build works without
+      # credentials — the app just can't reach Telegram at runtime.
+      # The TDLib .so files are not fetched either: they are only packaged,
+      # never needed to compile.
+      - name: Unit tests
+        run: ./gradlew test --no-daemon
+
+      - name: Assemble debug APK
+        run: ./gradlew assembleDebug --no-daemon
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-reports
+          path: app/build/reports/tests/
+          retention-days: 7

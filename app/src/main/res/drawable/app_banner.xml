@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TV launcher banner (320x180): brand mark + geometric TELETV wordmark on
+     layered brand blues. Flat paths only (safe below API 24). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+    <!-- Base -->
+    <path
+        android:fillColor="#1E88D4"
+        android:pathData="M0,0h320v180h-320z" />
+    <!-- Diagonal light band -->
+    <path
+        android:fillColor="#2AABEE"
+        android:pathData="M0,0 L320,0 L0,180 Z" />
+    <!-- Bottom-right deepening -->
+    <path
+        android:fillColor="#15619C"
+        android:fillAlpha="0.5"
+        android:pathData="M320,60 L320,180 L80,180 Z" />
+    <!-- Oversized ghost mark, background texture -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.08"
+        android:pathData="M180,20 L340,88 L180,156 L208,88 Z" />
+    <!-- Mark: plane/play body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,56 L104,90 L32,124 L46,90 Z" />
+    <path
+        android:fillColor="#0B0F17"
+        android:fillAlpha="0.22"
+        android:pathData="M46,90 L32,124 L66,106 Z" />
+    <!-- Wordmark: T E L E T V (geometric caps, cap height 70..110) -->
+    <!-- T -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M124,74 h26 v8 h-9 v32 h-8 v-32 h-9 Z" />
+    <!-- E -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M156,74 h24 v8 h-16 v8 h13 v8 h-13 v8 h16 v8 h-24 Z" />
+    <!-- L -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M186,74 h8 v32 h17 v8 h-25 Z" />
+    <!-- E -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M217,74 h24 v8 h-16 v8 h13 v8 h-13 v8 h16 v8 h-24 Z" />
+    <!-- T -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M247,74 h26 v8 h-9 v32 h-8 v-32 h-9 Z" />
+    <!-- V -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M279,74 L288,74 L294,103 L300,74 L309,74 L299,114 L289,114 Z" />
+</vector>
